@@ -1,0 +1,12 @@
+There’s a huge difference between using SQLite and sqlalchemy. 
+Yes, SQLite is so lightweight that it stores everything into a file, 
+which may not be powerful enough in some cases, but it’s definitely a good way to test things around at little cost.
+
+As for SQLAlchemy, It’s not a database, it’s an abstract connector to the database.
+
+Why and how is it powerful? With SQLAlchemy, we don’t need to care if we are interacting with a SQLite database, 
+a MySQL database or a PostgreSQL database. We only need to tell SQLAlchemy what we want to do with the data, 
+and it will automatically connect to the database of our choice, and use the language (dialect) of that database
+to manipulate the data. Otherwise, we will have to write different code when we use different databases,
+and the code is much longer than we wrote with SQLAlchemy.
+
